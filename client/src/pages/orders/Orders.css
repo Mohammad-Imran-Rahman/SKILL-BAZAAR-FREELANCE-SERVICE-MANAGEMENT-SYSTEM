@@ -1,0 +1,128 @@
+.orders {
+  display: flex;
+  justify-content: center;
+  color: #555;
+}
+.orders .container {
+  width: 1250px;
+  padding: 50px 0px;
+}
+.orders .container .title {
+  display: flex;
+  justify-content: space-between;
+}
+.orders .container .title button {
+  background-color: #1dbf73;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.orders .container table {
+  width: 100%;
+}
+.orders .container table tr {
+  height: 50px;
+}
+.orders .container table tr th {
+  text-align: left;
+}
+.orders .container table tr td sup {
+  font-size: 12px;
+}
+.orders .container table tr td .image {
+  width: 50px;
+  height: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.orders .container table tr td .message {
+  width: 25px;
+  cursor: pointer;
+}
+.orders .container table tr td input[type=file] {
+  display: none;
+}
+.orders .container table tr td div label,
+.orders .container table tr td div button {
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  background-color: #c0392b;
+  text-align: center;
+  place-items: center;
+  padding: 8px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+.orders .container table tr td div label svg,
+.orders .container table tr td div button svg {
+  margin-right: 10px;
+  font-size: 15px;
+}
+.orders .container table tr td div label .payment,
+.orders .container table tr td div button .payment {
+  background: #1dbf73 !important;
+}
+.orders .container table tr td .dropdown {
+  display: inline-block;
+  position: relative;
+}
+.orders .container table tr td .dd-button {
+  display: inline-block;
+  /*   border: 1px solid gray; */
+  border-radius: 4px;
+  padding: 10px 30px 10px 20px;
+  background-color: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.orders .container table tr td .dd-button:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+.orders .container table tr td .dd-button:hover {
+  background-color: #eeeeee;
+}
+.orders .container table tr td .dd-input {
+  display: none;
+}
+.orders .container table tr td .dd-menu {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  list-style-type: none;
+}
+.orders .container table tr td .dd-input + .dd-menu {
+  display: none;
+}
+.orders .container table tr td .dd-input:checked + .dd-menu {
+  display: block;
+}
+.orders .container table tr td .dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.orders .container table tr td .dd-menu li:hover {
+  background-color: #f6f6f6;
+}
+.orders .container table tr:nth-child(even) {
+  background-color: rgba(29, 191, 115, 0.0588235294);
+}/*# sourceMappingURL=Orders.css.map */

@@ -1,0 +1,101 @@
+.complaint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.complaint form {
+  width: 960px;
+  padding: 100px 0px;
+  display: flex;
+  gap: 120px;
+}
+.complaint form h1 {
+  color: gray;
+  margin-bottom: 20px;
+}
+.complaint form .left,
+.complaint form .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+.complaint form .left label,
+.complaint form .right label {
+  color: gray;
+  font-size: 18px;
+}
+.complaint form .left input,
+.complaint form .left textarea,
+.complaint form .right input,
+.complaint form .right textarea {
+  padding: 20px;
+  border: 1px solid rgb(216, 214, 214);
+}
+.complaint form .left button,
+.complaint form .right button {
+  border: none;
+  padding: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #1dbf73;
+  cursor: pointer;
+}
+.complaint form .left .toggle,
+.complaint form .right .toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Hide default HTML checkbox */
+}
+.complaint form .left .toggle .switch,
+.complaint form .right .toggle .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+.complaint form .left .toggle .switch input,
+.complaint form .right .toggle .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.complaint form .left .toggle .slider,
+.complaint form .right .toggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+.complaint form .left .toggle .slider:before,
+.complaint form .right .toggle .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.complaint form .left .toggle input:checked + .slider,
+.complaint form .right .toggle input:checked + .slider {
+  background-color: #2196f3;
+}
+.complaint form .left .toggle input:focus + .slider,
+.complaint form .right .toggle input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+.complaint form .left .toggle input:checked + .slider:before,
+.complaint form .right .toggle input:checked + .slider:before {
+  transform: translateX(26px);
+}/*# sourceMappingURL=Complaint.css.map */
